@@ -92,6 +92,10 @@
         .attribution a { color: hsl(228, 45%, 44%); }
     
     @media screen and (min-width: 800px){
+
+      body {
+        padding: 1%;
+      }
     
        main {
         transform: translate(0,50%);
