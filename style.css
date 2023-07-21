@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    }
+    
+    body {
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', 'Times New Roman', sans-serif;
+    }
+    
+    main {
+    display: flex;
+    flex-direction: column;
+    margin: 5.5rem 1.5rem;
+    }
+    
+    article {
+    padding: 3rem;
+    position: relative;
+    }
+    
+    article:first-of-type {
+    border-radius: 0.313rem 0.313rem 0 0;
+    }
+    article:last-of-type {
+    border-radius: 0 0 0.313rem 0.313rem;
+    }
+    
+    h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-top: 2.19rem;
+    }
+    
+    p {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.584rem;
+    margin: 1.5rem 0 4rem;
+    }
+    
+    button {
+    display: block;
+    position: absolute;
+    bottom: 3rem;
+    margin:auto;
+    width: 9.125rem;
+    height: 3rem;
+    border-radius: 3rem;
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: hsl(0, 0%, 95%);
+    }
+    
+    a {
+    width: 9.125rem;
+    height: 3rem;
+    border-radius: 3rem;
+    font-size: 0.94rem;
+    padding: 1rem 2rem;
+    color: hsl(184, 100%, 22%);
+    font-weight: 400;
+    }
+    
+    a.first {
+      color: hsl(31, 77%, 52%);
+    }
+    a.last {
+      color: hsl(179, 100%, 13%);
+    }
+    
+    a:link {
+      text-decoration: none; 
+      }
+    a:visited {
+     }
+    a:hover {
+      color: hsl(0, 0%, 95%);
+    }
+    a:active {
+    }
+    
+    button:hover {
+      background-color: hsl(0, 0%, 95%, 0%);
+    }
+    
+        .attribution { font-size: 11px; text-align: center; position: relative; bottom: 0;}
+        .attribution a { color: hsl(228, 45%, 44%); }
+    
+    @media screen and (min-width: 800px){
+    
+       main {
+        transform: translate(0,50%);
+        margin: auto;
+        flex-direction: row;
+        max-width: 921px;
+        }
+       p {
+        margin: 1.5rem 0 10rem;
+      }
+      article:first-of-type {
+    border-radius: 0.313rem 0 0 0.313rem;
+    }
+    article:last-of-type {
+    border-radius: 0 0.313rem 0.313rem 0;
+    }
+    .attribution {text-align:start; position: absolute; bottom: 0;}
+    }
