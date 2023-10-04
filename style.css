@@ -28,6 +28,29 @@
     article:last-of-type {
     border-radius: 0 0 0.313rem 0.313rem;
     }
+
+    .road {
+      position: relative;
+      width: 100%;
+    }
+
+    .circle {
+      position: relative;
+      margin-left: -50px;
+
+    }
+    .car {
+      position: relative;
+      z-index: 2;
+      animation-name: caranime;
+      animation-duration: 25s;
+      animation-iteration-count: infinite;
+    }
+    @keyframes caranime {
+      from {left:0;}
+      to {left:82%;}
+  }
+
     
     h1 {
     font-family: 'Big Shoulders Display', cursive;
@@ -105,7 +128,6 @@
         flex-direction: row;
         max-width: 921px;  
         }
-        
        p {
         margin: 1.5rem 0 10rem;
       }
@@ -115,5 +137,5 @@
     article:last-of-type {
     border-radius: 0 0.313rem 0.313rem 0;
     }
-    .attribution {text-align:start; position: absolute; bottom: 0;}
+    .attribution { position: absolute; bottom: 0;}
     }
